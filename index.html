@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Cube Store - Nepal's Trusted Online Tech Store</title>
+  <meta name="description" content="Premium hardware and SaaS software for businesses and individuals in Nepal. RAM, motherboards, gaming PCs, cameras, drones, ERP, HR & Payroll, Billing software." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="nav-logo">
+        <img src="images/logo.jpg" alt="A Cube Store" />
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#software">Software</a>
+        <a href="#about">About</a>
+        <a href="#careers">Careers</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+    <div class="container hero-inner">
+      <span class="badge">Nepal's Premier Tech Destination</span>
+      <h1 class="hero-title">
+        Your Trusted<br />
+        <span class="text-gradient">Online Tech Store</span>
+      </h1>
+      <p class="hero-sub">
+        Discover cutting-edge hardware products and premium SaaS software services. A Cube Store is the go-to technical partner for businesses and individuals in Nepal.
+      </p>
+      <div class="hero-cta">
+        <a href="#products" class="btn btn-primary">Explore Products
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="#software" class="btn btn-outline">View Software
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTS ============ -->
+  <section id="products" class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Hardware</span>
+        <h2 class="section-title">Featured <span class="text-gradient">Products</span></h2>
+        <p class="section-sub">Premium tech hardware curated for performance, reliability, and value.</p>
+      </div>
+
+      <div class="search-wrap">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="search" id="productSearch" placeholder="Search products by name, brand or specs..." autocomplete="off" />
+        <button class="search-clear" id="searchClear" aria-label="Clear search">&times;</button>
+      </div>
+
+      <div class="product-filters" id="productFilters"></div>
+      <div class="products-grid" id="productsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ BRAND PARTNERS ============ -->
+  <section id="brands" class="section section-tight">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Trusted Partners</span>
+        <h2 class="section-title">Our Brand <span class="text-gradient">Partners</span></h2>
+        <p class="section-sub">We proudly work with the world's leading technology brands.</p>
+      </div>
+      <div class="brands-grid" id="brandsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ LOGISTICS PARTNER ============ -->
+  <section id="logistics" class="section section-alt section-tight">
+    <div class="container">
+      <div class="logistics-card">
+        <div class="logistics-logo"><img src="images/brand-pathao.svg" alt="Pathao Parcel" /></div>
+        <div class="logistics-text">
+          <span class="eyebrow">Logistics Partner</span>
+          <h3>Fast & Reliable Delivery with <span class="text-gradient">Pathao Parcel</span></h3>
+          <p>We've partnered with Pathao Parcel to deliver your tech across Nepal — quickly, safely and with real-time tracking. Same-day delivery available in the Kathmandu Valley.</p>
+          <ul class="logistics-perks">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Same-day delivery in Kathmandu Valley</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Nationwide reach across Nepal</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Real-time tracking & SMS updates</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Cash-on-delivery supported</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOFTWARE ============ -->
+  <section id="software" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">SaaS Solutions</span>
+        <h2 class="section-title">Software <span class="text-gradient">Services</span></h2>
+        <p class="section-sub">Powerful, scalable software to run and grow your business.</p>
+      </div>
+
+      <div class="software-grid" id="softwareGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">About Us</span>
+        <h2 class="section-title">Who We <span class="text-gradient">Are</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>A Cube Store is Nepal's trusted destination for premium technology hardware and modern SaaS solutions. From custom-built gaming PCs and cutting-edge cameras to enterprise ERP systems and HR software, we serve businesses and individuals across the country.</p>
+          <p>Founded in Kathmandu, our mission is to make professional-grade technology accessible to everyone in Nepal — backed by genuine products, reliable support, and fair NPR pricing.</p>
+          <div class="stats">
+            <div class="stat"><h3>5,000+</h3><p>Happy Customers</p></div>
+            <div class="stat"><h3>200+</h3><p>Tech Products</p></div>
+            <div class="stat"><h3>50+</h3><p>Business Clients</p></div>
+            <div class="stat"><h3>24/7</h3><p>Support</p></div>
+          </div>
+        </div>
+        <div class="about-features">
+          <div class="feature">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h4>Genuine Products</h4>
+            <p>Authorized dealer for top global tech brands.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h4>Fast Delivery</h4>
+            <p>Nationwide delivery across Nepal within 1-3 days.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h4>24/7 Support</h4>
+            <p>Dedicated technical support whenever you need it.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h4>Local Expertise</h4>
+            <p>Built in Nepal, for Nepal — with local payment & support.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CAREERS ============ -->
+  <section id="careers" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Join Us</span>
+        <h2 class="section-title">Open <span class="text-gradient">Positions</span></h2>
+        <p class="section-sub">Build the future of tech in Nepal with us.</p>
+      </div>
+      <div class="jobs-list" id="jobsList"></div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Contact</span>
+        <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+        <p class="section-sub">We'd love to hear from you.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><h4>Address</h4><p>Kalanki, Kathmandu, Nepal</p></div>
+          </div>
+          <div class="contact-item">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div><h4>Phone</h4><p>+977 9744567711</p></div>
+          </div>
+          <div class="contact-item">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div><h4>Email</h4><p>acube.techstore@gmail.com</p></div>
+          </div>
+          <div class="map-wrap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.0986716287413!2d85.27986837525547!3d27.694005425735793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18f8aedf17c1%3A0x9bfa8e2b9e9f5e8e!2sKalanki%2C%20Kathmandu!5e0!3m2!1sen!2snp!4v1700000000000" width="100%" height="250" style="border:0;border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+          </div>
+          <input type="text" name="subject" placeholder="Subject" required />
+          <textarea name="message" rows="6" placeholder="Your message..." required></textarea>
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          <div class="form-success" id="contactSuccess" hidden>Thank you! We'll get back to you soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo.jpg" alt="A Cube Store" />
+        <p>Your Trusted Online Tech Store. Premium hardware and cutting-edge software solutions for businesses and individuals in Nepal.</p>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <ul><li><a href="#home">Home</a></li><li><a href="#products">Products</a></li><li><a href="#software">Software</a></li><li><a href="#about">About</a></li></ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul><li><a href="#careers">Careers</a></li><li><a href="#contact">Contact</a></li><li><a href="#about">Our Story</a></li></ul>
+      </div>
+      <div>
+        <h5>Payment Methods</h5>
+        <ul class="pay-list"><li>eSewa</li><li>Khalti</li><li>IME Pay</li><li>Bank Transfer</li></ul>
+        <h5 style="margin-top:1.25rem">Logistics Partner</h5>
+        <ul class="pay-list"><li>Pathao Parcel</li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>© <span id="year"></span> A Cube Store. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ============ CART DRAWER ============ -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-head">
+      <h3>Your Cart</h3>
+      <button class="icon-btn" id="cartClose" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="drawer-body" id="cartBody">
+      <p class="empty-state">Your cart is empty.</p>
+    </div>
+    <div class="drawer-foot" id="cartFoot" hidden>
+      <div class="cart-total"><span>Total</span><strong id="cartTotal">NPR 0</strong></div>
+      <button class="btn btn-primary btn-block" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- ============ CHECKOUT MODAL ============ -->
+  <div class="modal" id="checkoutModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="icon-btn modal-close" data-close-modal="checkoutModal" aria-label="Close">&times;</button>
+      <h3>Checkout</h3>
+      <p class="muted">Choose your preferred payment method.</p>
+      <form id="checkoutForm">
+        <div class="form-row">
+          <input type="text" name="fullname" placeholder="Full Name" required />
+          <input type="tel" name="phone" placeholder="Phone Number" required />
+        </div>
+        <input type="text" name="address" placeholder="Delivery Address" required />
+        <label class="form-label">Payment Method</label>
+        <div class="pay-grid">
+          <label class="pay-option"><input type="radio" name="pay" value="esewa" checked /><span>eSewa</span></label>
+          <label class="pay-option"><input type="radio" name="pay" value="khalti" /><span>Khalti</span></label>
+          <label class="pay-option"><input type="radio" name="pay" value="ime" /><span>IME Pay</span></label>
+          <label class="pay-option"><input type="radio" name="pay" value="bank" /><span>Bank Transfer</span></label>
+        </div>
+        <div class="cart-total"><span>Order Total</span><strong id="checkoutTotal">NPR 0</strong></div>
+        <button type="submit" class="btn btn-primary btn-block">Place Order</button>
+      </form>
+      <div class="success-state" id="orderSuccess" hidden>
+        <div class="success-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h4>Order Placed!</h4>
+        <p>Thank you for shopping with A Cube Store. We'll contact you shortly to confirm your order.</p>
+        <button class="btn btn-primary" data-close-modal="checkoutModal">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ PRODUCT DETAIL MODAL ============ -->
+  <div class="modal" id="productDetailModal" aria-hidden="true">
+    <div class="modal-card modal-lg">
+      <button class="icon-btn modal-close" data-close-modal="productDetailModal" aria-label="Close">&times;</button>
+      <div id="productDetailBody"></div>
+    </div>
+  </div>
+
+  <!-- ============ TRIAL MODAL ============ -->
+  <div class="modal" id="trialModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="icon-btn modal-close" data-close-modal="trialModal" aria-label="Close">&times;</button>
+      <h3 id="trialTitle">Start Free Trial</h3>
+      <p class="muted" id="trialSub">Get started with a 14-day free trial. No credit card required.</p>
+      <form id="trialForm">
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Work Email" required />
+        <input type="text" name="company" placeholder="Company Name" required />
+        <input type="tel" name="phone" placeholder="Phone Number" required />
+        <button type="submit" class="btn btn-primary btn-block">Start Free Trial</button>
+      </form>
+      <div class="success-state" id="trialSuccess" hidden>
+        <div class="success-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h4>Trial Activated!</h4>
+        <p>Check your email for login details and onboarding instructions.</p>
+        <button class="btn btn-primary" data-close-modal="trialModal">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
